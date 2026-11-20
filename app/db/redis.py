@@ -15,7 +15,7 @@ async def connect_redis():
 async def close_redis():
     global redis_client
     if redis_client is not None:
-        redis_client.aclose()
+        await redis_client.aclose()
         redis_client = None
         
     print("Redis Connection closed")

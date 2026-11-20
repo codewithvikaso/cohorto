@@ -80,7 +80,7 @@ class VersionData(BaseModel):
     
     
 class PublishResult(BaseModel):
-    virsion : str
+    version : int
     summary : str
     tags : list[str]
     
